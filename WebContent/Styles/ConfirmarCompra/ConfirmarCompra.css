@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Draconis';
+  src: url("../../assets/fonts/Draconis-JRw6B.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBold';
+  src: url("../../assets/fonts/DraconisBold-qZxd6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBoldItalic';
+  src: url("../../assets/fonts/DraconisBoldItalic-AL8O6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisItalic';
+  src: url("../../assets/fonts/DraconisItalic-VGdjy.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../../assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("../../assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+.cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: Draconis;
+  font-size: 24px;
+}
+
+.cabecera .navegador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.cabecera .navegador .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.cabecera .navegador a {
+  text-decoration: none;
+  color: white;
+}
+
+.cabecera .navegador .contenedor-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil .desplegar {
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.cabecera .navegador .contenedor-perfil .menuDesplegable {
+  position: absolute;
+  background-color: black;
+  top: 40px;
+  padding: 10px;
+  left: 137px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecera .navegador .contenedor-perfil .menuDesplegable a {
+  font-size: 18px;
+}
+
+.cabecera .navegador .contenedor-perfil .menuDesplegable input {
+  background-color: black;
+  color: white;
+  padding: 0;
+  border-width: 0;
+  border-style: none;
+  font-size: 18px;
+}
+
+.cabecera .navegador .contenedor-perfil .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div h2 {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  font-family: OpenSans-Bold;
+}
+
+div ul {
+  font-family: OpenSans;
+}
+
+.precio-realizar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: OpenSans;
+}
+
+.precio-realizar .precio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.precio-realizar .realizar-compra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.precio-realizar .realizar-compra .btn {
+  margin-right: 10px;
+  width: 200px;
+}
+
+.precio-realizar .realizar-compra .btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.precio-realizar .realizar-compra input {
+  width: 200px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: OpenSans;
+}
+
+footer .logo {
+  width: 100px;
+}
+
+footer a {
+  color: white;
+}
+/*# sourceMappingURL=ConfirmarCompra.css.map */

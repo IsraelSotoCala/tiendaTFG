@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Draconis';
+  src: url("../../assets/fonts/Draconis-JRw6B.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBold';
+  src: url("../../assets/fonts/DraconisBold-qZxd6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBoldItalic';
+  src: url("../../assets/fonts/DraconisBoldItalic-AL8O6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisItalic';
+  src: url("../../assets/fonts/DraconisItalic-VGdjy.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../../assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("../../assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+.cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: Draconis;
+  font-size: 24px;
+}
+
+.cabecera .navegador {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.cabecera .navegador .logo {
+  width: 100px;
+  height: 100px;
+}
+
+.cabecera .navegador a {
+  text-decoration: none;
+  color: white;
+}
+
+.cabecera .navegador .contenedor-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.cabecera .navegador .contenedor-perfil .contenido-perfil .desplegar {
+  width: 30px;
+  height: 30px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.cabecera .navegador .contenedor-perfil .menuDesplegable {
+  position: absolute;
+  background-color: black;
+  top: 40px;
+  padding: 10px;
+  left: 105px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cabecera .navegador .contenedor-perfil .menuDesplegable input {
+  background-color: black;
+  color: white;
+  padding: 0;
+  border-width: 0;
+  border-style: none;
+}
+
+.cabecera .navegador .contenedor-perfil .active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contenedor-filtros {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  background-color: #e8e4dc;
+  font-family: OpenSans;
+}
+
+.contenedor-filtros .titulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-filtros .titulos h4 {
+  font-weight: bold;
+}
+
+.contenedor-filtros form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.contenedor-filtros form .opciones-filtrado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contenedor-filtros form .opciones-filtrado select {
+  width: 250px;
+}
+
+.contenedor-filtros form .opciones-filtrado select option {
+  width: 200px;
+}
+
+.contenedor-filtros form .opciones-filtrado input {
+  width: 250px;
+}
+
+.contenedor-filtros form .container-fluid {
+  --bs-gutter-x: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contenedor-filtros form .container-fluid input {
+  width: 200px;
+}
+
+.contenedor-filtros button {
+  width: 200px;
+}
+
+.contenedor-filtros button a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-group {
+  font-family: OpenSans;
+}
+
+.list-group .list-group-item {
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-group .list-group-item .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  margin: 0;
+}
+
+.list-group .list-group-item .container-fluid a {
+  color: black;
+  font-weight: bold;
+}
+
+.paginas {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e8e4dc;
+  font-family: OpenSans;
+}
+
+.paginas .botones-paginas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paginas .botones-paginas button {
+  height: 50px;
+}
+
+.paginas .botones-paginas input {
+  width: 200px;
+}
+
+.paginas .botones-paginas a {
+  color: white;
+  text-decoration: none;
+}
+
+.paginas .botones-paginas div .pagination .page-item a {
+  color: black;
+  margin: 10px;
+}
+
+.paginas a {
+  color: black;
+  font-weight: bold;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: white;
+  font-family: OpenSans;
+}
+
+footer .logo {
+  width: 100px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=ListaProductos.css.map */

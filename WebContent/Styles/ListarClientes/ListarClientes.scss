@@ -1,0 +1,83 @@
+@import "../variables/colors.scss";
+@import "../variables/fonts.scss";
+.contenedor-filtros {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: map-get($colors, pasteldungeon);
+    font-family: OpenSans;
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        select {
+            width: 250px;
+            option {
+                width: 200px;
+            }
+        }
+        input {
+            width: 250px;
+        }
+        .container-fluid {
+            --bs-gutter-x: 0;
+            input {
+                width: 200px;
+            }
+        }
+    }
+    button {
+        width: 250px;
+        a {
+            color: map-get($colors, blanco);
+            text-decoration: none;
+        }
+    }
+}
+
+.list-group {
+    font-family: OpenSans;
+    .list-group-item {
+        border-radius: 0;
+        display: flex;
+        img {
+            max-height: 100px;
+        }
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            margin: 0;
+            a {
+                width: 100px;
+                margin-right: 10px;
+            }
+            .opciones {
+                display: flex;
+            }
+        }
+    }
+}
+
+.paginas {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: map-get($colors, pasteldungeon);
+    font-family: OpenSans;
+    .botones-paginas {
+        display: flex;
+        input {
+            width: 200px;
+        }
+        a {
+            margin: 5px;
+            color: map-get($colors, negro);
+        }
+    }
+    a {
+        color: map-get($colors, negro);
+    }
+}

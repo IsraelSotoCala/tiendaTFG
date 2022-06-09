@@ -1,0 +1,165 @@
+@import "../variables/colors.scss";
+@import "../variables/fonts.scss";
+body {
+    margin: 0;
+}
+
+.cabecera {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: Draconis;
+    font-size: 24px;
+    .navegador {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        a {
+            text-decoration: none;
+            color: map-get($colors, blanco);
+        }
+        .contenedor-perfil {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .contenido-perfil {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                }
+                .desplegar {
+                    width: 30px;
+                    height: 30px;
+                    filter: invert(1);
+                }
+            }
+            .menuDesplegable {
+                position: absolute;
+                background-color: map-get($colors, negro);
+                top: 40px;
+                padding: 10px;
+                left: 140px;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                a {
+                    font-size: 18px;
+                }
+                input {
+                    background-color: map-get($colors, negro);
+                    color: map-get($colors, blanco);
+                    padding: 0;
+                    border-width: 0;
+                    border-style: none;
+                    font-size: 18px;
+                }
+            }
+            .active {
+                display: flex;
+            }
+        }
+    }
+}
+
+.contenedor-vendidos {
+    background-color: map-get($colors, pasteldungeon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    h2 {
+        text-decoration: underline;
+        font-family: OpenSans-Bold;
+    }
+    .owl-carousel {
+        margin-top: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        .item {
+            img {
+                width: 250px;
+            }
+        }
+        .btn {
+            a {
+                color: map-get($colors, blanco);
+                text-decoration: none;
+            }
+        }
+        .boton-carrusel {
+            margin-top: 10px;
+            margin-left: 60px;
+            margin-bottom: 40px;
+        }
+    }
+    .contenedor-info {
+        display: flex;
+        background-image: url(../../assets/img/FondoPedidos.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        .info-izquierda {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            color: map-get($colors, blanco);
+            margin: 20px;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
+            h4 {
+                margin-bottom: 20px;
+            }
+        }
+        .info-derecha {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: map-get($colors, blanco);
+            flex-direction: column;
+            h2 {
+                text-decoration: none;
+                margin-bottom: 20px;
+            }
+            button {
+                width: 200px;
+                background-color: map-get($colors, rojodungeon);
+                a {
+                    color: map-get($colors, blanco);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: OpenSans;
+    .logo {
+        width: 100px;
+    }
+    a {
+        color: map-get($colors, blanco);
+        text-decoration: none;
+    }
+}

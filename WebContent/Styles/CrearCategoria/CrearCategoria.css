@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Draconis';
+  src: url("../../assets/fonts/Draconis-JRw6B.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBold';
+  src: url("../../assets/fonts/DraconisBold-qZxd6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBoldItalic';
+  src: url("../../assets/fonts/DraconisBoldItalic-AL8O6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisItalic';
+  src: url("../../assets/fonts/DraconisItalic-VGdjy.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../../assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("../../assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+body {
+  background: url(../../assets/img/FondoCrearProductos.jpg) fixed 50%;
+  background-size: cover;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: OpenSans;
+}
+
+.main .contenedor-crear-categoria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  background-color: #e8e4dcbe;
+  border: 2px solid black;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main .contenedor-crear-categoria form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main .contenedor-crear-categoria form h2 {
+  font-family: OpenSans-Bold;
+}
+
+.main .contenedor-crear-categoria form h4 {
+  font-family: OpenSans-Bold;
+}
+
+.main .contenedor-crear-categoria form label {
+  font-family: OpenSans-Bold;
+}
+
+.main .contenedor-crear-categoria form input {
+  width: 500px;
+}
+
+.main .contenedor-crear-categoria form a {
+  color: black;
+}
+/*# sourceMappingURL=CrearCategoria.css.map */

@@ -1,0 +1,128 @@
+@import "../variables/colors.scss";
+@import "../variables/fonts.scss";
+.cabecera {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: Draconis;
+    font-size: 24px;
+    .navegador {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        a {
+            text-decoration: none;
+            color: map-get($colors, blanco);
+        }
+        .contenedor-perfil {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .contenido-perfil {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                }
+                .desplegar {
+                    width: 30px;
+                    height: 30px;
+                    filter: invert(1);
+                }
+            }
+            .menuDesplegable {
+                position: absolute;
+                background-color: map-get($colors, negro);
+                top: 40px;
+                padding: 10px;
+                left: 105px;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                input {
+                    background-color: map-get($colors, negro);
+                    color: map-get($colors, blanco);
+                    padding: 0;
+                    border-width: 0;
+                    border-style: none;
+                }
+            }
+            .active {
+                display: flex;
+            }
+        }
+    }
+}
+
+.detalles-producto {
+    display: flex;
+    font-family: OpenSans;
+    flex-direction: column;
+    padding: 150px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/img/FondoCatalogo.jpg);
+    .imagen-datos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: map-get($colors, pasteltranslucido);
+        gap: 10px;
+        .contenedor-imagen-producto {
+            margin: 20px;
+        }
+        .datos-producto {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            width: 80%;
+            h2 {
+                font-family: OpenSans-Bold;
+            }
+            .info-producto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h2 {
+                    font-family: OpenSans-Bold;
+                }
+            }
+        }
+        .anadir-volver {
+            display: flex;
+            margin-top: 20px;
+            .btn {
+                width: 200px;
+                margin-right: 10px;
+                a {
+                    color: map-get($colors, blanco);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: OpenSans;
+    .logo {
+        width: 100px;
+    }
+    a {
+        color: map-get($colors, blanco);
+        text-decoration: none;
+    }
+}

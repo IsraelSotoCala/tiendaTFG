@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Draconis';
+  src: url("../../assets/fonts/Draconis-JRw6B.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBold';
+  src: url("../../assets/fonts/DraconisBold-qZxd6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisBoldItalic';
+  src: url("../../assets/fonts/DraconisBoldItalic-AL8O6.ttf");
+}
+
+@font-face {
+  font-family: 'DraconisItalic';
+  src: url("../../assets/fonts/DraconisItalic-VGdjy.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../../assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url("../../assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-BoldItalic';
+  src: url("../../assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+.contenedor-filtros {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  background-color: #e8e4dc;
+  font-family: OpenSans;
+}
+
+.contenedor-filtros form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.contenedor-filtros form select {
+  width: 250px;
+}
+
+.contenedor-filtros form select option {
+  width: 200px;
+}
+
+.contenedor-filtros form input {
+  width: 250px;
+}
+
+.contenedor-filtros form .container-fluid {
+  --bs-gutter-x: 0;
+}
+
+.contenedor-filtros form .container-fluid input {
+  width: 200px;
+}
+
+.contenedor-filtros button {
+  width: 250px;
+}
+
+.contenedor-filtros button a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-group {
+  font-family: OpenSans;
+}
+
+.list-group .list-group-item {
+  border-radius: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.list-group .list-group-item .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  margin: 0;
+}
+
+.list-group .list-group-item .container-fluid a {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.list-group .list-group-item .container-fluid .opciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paginas {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e8e4dc;
+  font-family: OpenSans;
+}
+
+.paginas .botones-paginas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.paginas .botones-paginas input {
+  width: 200px;
+}
+
+.paginas .botones-paginas a {
+  margin: 5px;
+  color: black;
+}
+
+.paginas a {
+  color: black;
+}
+/*# sourceMappingURL=ListarProductos.css.map */

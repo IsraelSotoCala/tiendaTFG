@@ -1,0 +1,40 @@
+@import "../variables/colors.scss";
+@import "../variables/fonts.scss";
+body {
+    background: url(../../assets/img/FondoAdminProductos.jpg) fixed 50%;
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    font-family: OpenSans;
+    .contenedor-opciones {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        background-color: map-get($colors, pasteltranslucido);
+        margin-top: 20px;
+        border: 2px solid map-get($colors, negro);
+        gap: 20px;
+        padding: 20px;
+        h4 {
+            font-family: OpenSans-Bold;
+        }
+        .opciones-productos {
+            display: flex;
+            gap: 20px;
+            a {
+                width: 150px;
+            }
+        }
+        .opciones-categoria {
+            display: flex;
+            gap: 20px;
+            a {
+                width: 150px;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import "../variables/colors.scss";
+@import "../variables/fonts.scss";
+.cabecera {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: Draconis;
+    font-size: 24px;
+    width: 100%;
+    .navegador {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        gap: 40px;
+        .logo {
+            width: 100px;
+            height: 100px;
+        }
+        a {
+            text-decoration: none;
+            color: map-get($colors, blanco);
+        }
+        .contenedor-perfil {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            .contenido-perfil {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                img {
+                    width: 50px;
+                    height: 50px;
+                    cursor: pointer;
+                }
+                .desplegar {
+                    width: 30px;
+                    height: 30px;
+                    filter: invert(1);
+                }
+            }
+            .menuDesplegable {
+                position: absolute;
+                background-color: map-get($colors, negro);
+                top: 40px;
+                padding: 10px;
+                left: 105px;
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+                input {
+                    background-color: map-get($colors, negro);
+                    color: map-get($colors, blanco);
+                    padding: 0;
+                    border-width: 0;
+                    border-style: none;
+                }
+            }
+            .active {
+                display: flex;
+            }
+        }
+    }
+}
+
+.contenedor-carrito {
+    display: flex;
+    flex-direction: column;
+    h2 {
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 60px;
+        text-decoration: underline;
+    }
+    .precio-confirmar {
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        margin-top: 30px;
+        .precio-compra {
+            display: flex;
+        }
+        .confirmar-compra {
+            display: flex;
+            margin-bottom: 20px;
+            .btn {
+                margin-right: 20px;
+                width: 200px;
+                a {
+                    color: map-get($colors, blanco);
+                    text-decoration: none;
+                }
+            }
+            input {
+                width: 200px;
+            }
+        }
+    }
+}
+
+footer {
+    display: flex;
+    background-color: map-get($colors, negro);
+    color: map-get($colors, blanco);
+    font-family: OpenSans;
+    .logo {
+        width: 100px;
+    }
+    a {
+        color: map-get($colors, blanco);
+        text-decoration: none;
+    }
+}
