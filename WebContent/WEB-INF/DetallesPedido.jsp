@@ -163,7 +163,7 @@
 						<li><a href="#">Wizards of the Coast</a></li>
 						<li><a href="#">Acerca de </a></li>
 						<li><a href="#">D&D</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="Contactar">Ayuda y soporte, contáctanos</a></li>
 					</ul>
 				</div>
 			</div>

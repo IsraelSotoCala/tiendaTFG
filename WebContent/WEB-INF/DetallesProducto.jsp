@@ -63,7 +63,7 @@
 
 		producto = (ProductoVO) session.getAttribute("producto");
 	%>
-
+<div class="main">
 	<div class="detalles-producto">
 		<div class="imagen-datos">
 			<div class="contenedor-imagen-producto">
@@ -117,7 +117,7 @@
 
 
 	</div>
-
+</div>
 	<!-- FOOTER -->
 	<footer class="w-100 py-4 flex-shrink-0">
 		<div class="container py-4">
@@ -146,7 +146,7 @@
 						<li><a href="#">Wizards of the Coast</a></li>
 						<li><a href="#">Acerca de </a></li>
 						<li><a href="#">D&D</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="Contactar">Ayuda y soporte, contáctanos</a></li>
 					</ul>
 				</div>
 			</div>

@@ -136,7 +136,7 @@
   display: flex;
 }
 
-.detalles-producto {
+.main .detalles-producto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,7 +155,7 @@
   background-image: url(../../assets/img/FondoCatalogo.jpg);
 }
 
-.detalles-producto .imagen-datos {
+.main .detalles-producto .imagen-datos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,11 +169,11 @@
   gap: 10px;
 }
 
-.detalles-producto .imagen-datos .contenedor-imagen-producto {
+.main .detalles-producto .imagen-datos .contenedor-imagen-producto {
   margin: 20px;
 }
 
-.detalles-producto .imagen-datos .datos-producto {
+.main .detalles-producto .imagen-datos .datos-producto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,11 +185,11 @@
   width: 80%;
 }
 
-.detalles-producto .imagen-datos .datos-producto h2 {
+.main .detalles-producto .imagen-datos .datos-producto h2 {
   font-family: OpenSans-Bold;
 }
 
-.detalles-producto .imagen-datos .datos-producto .info-producto {
+.main .detalles-producto .imagen-datos .datos-producto .info-producto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,23 +202,23 @@
           justify-content: center;
 }
 
-.detalles-producto .imagen-datos .datos-producto .info-producto h2 {
+.main .detalles-producto .imagen-datos .datos-producto .info-producto h2 {
   font-family: OpenSans-Bold;
 }
 
-.detalles-producto .imagen-datos .anadir-volver {
+.main .detalles-producto .imagen-datos .anadir-volver {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
 }
 
-.detalles-producto .imagen-datos .anadir-volver .btn {
+.main .detalles-producto .imagen-datos .anadir-volver .btn {
   width: 200px;
   margin-right: 10px;
 }
 
-.detalles-producto .imagen-datos .anadir-volver .btn a {
+.main .detalles-producto .imagen-datos .anadir-volver .btn a {
   color: white;
   text-decoration: none;
 }

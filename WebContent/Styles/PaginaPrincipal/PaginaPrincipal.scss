@@ -72,78 +72,81 @@ body {
     }
 }
 
-.contenedor-vendidos {
-    background-color: map-get($colors, pasteldungeon);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    h2 {
-        text-decoration: underline;
-        font-family: OpenSans-Bold;
-    }
-    .owl-carousel {
-        margin-top: 50px;
+.main {
+    min-height: 100vh;
+    .contenedor-vendidos {
+        background-color: map-get($colors, pasteldungeon);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top: 20px;
-        padding-bottom: 20px;
-        display: flex;
-        .item {
-            img {
-                width: 250px;
-            }
+        h2 {
+            text-decoration: underline;
+            font-family: OpenSans-Bold;
         }
-        .btn {
-            a {
-                color: map-get($colors, blanco);
-                text-decoration: none;
-            }
-        }
-        .boton-carrusel {
-            margin-top: 10px;
-            margin-left: 60px;
-            margin-bottom: 40px;
-        }
-    }
-    .contenedor-info {
-        display: flex;
-        background-image: url(../../assets/img/FondoPedidos.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 500px;
-        .info-izquierda {
+        .owl-carousel {
+            margin-top: 50px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             display: flex;
-            flex-direction: column;
-            width: 50%;
-            color: map-get($colors, blanco);
-            margin: 20px;
-            align-items: center;
-            justify-content: center;
-            h2 {
-                text-decoration: none;
-                margin-bottom: 20px;
+            .item {
+                img {
+                    width: 250px;
+                }
             }
-            h4 {
-                margin-bottom: 20px;
-            }
-        }
-        .info-derecha {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: map-get($colors, blanco);
-            flex-direction: column;
-            h2 {
-                text-decoration: none;
-                margin-bottom: 20px;
-            }
-            button {
-                width: 200px;
-                background-color: map-get($colors, rojodungeon);
+            .btn {
                 a {
                     color: map-get($colors, blanco);
                     text-decoration: none;
+                }
+            }
+            .boton-carrusel {
+                margin-top: 10px;
+                margin-left: 60px;
+                margin-bottom: 40px;
+            }
+        }
+        .contenedor-info {
+            display: flex;
+            background-image: url(../../assets/img/FondoPedidos.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 500px;
+            .info-izquierda {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                color: map-get($colors, blanco);
+                margin: 20px;
+                align-items: center;
+                justify-content: center;
+                h2 {
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                }
+                h4 {
+                    margin-bottom: 20px;
+                }
+            }
+            .info-derecha {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: map-get($colors, blanco);
+                flex-direction: column;
+                h2 {
+                    text-decoration: none;
+                    margin-bottom: 20px;
+                }
+                button {
+                    width: 200px;
+                    background-color: map-get($colors, rojodungeon);
+                    a {
+                        color: map-get($colors, blanco);
+                        text-decoration: none;
+                    }
                 }
             }
         }

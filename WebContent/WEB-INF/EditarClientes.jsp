@@ -59,7 +59,7 @@
 				
 				<input type="submit" value="Editar perfil" class="btn btn-dark"> 
 				
-				<a href="PaginaPrincipal">Volver</a>
+				<a href="ListarClientes">Volver</a>
 
 			</form>
 		</div>

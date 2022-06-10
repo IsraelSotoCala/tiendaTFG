@@ -63,7 +63,19 @@
 			</div>
 		</nav>
 	</header>
+	
+	<%
+		if (session.getAttribute("inicioSesion") != null) {
+	%>
+	<h2 style="margin: 20px"><%=session.getAttribute("inicioSesion")%></h2>
+	<%
+		session.setAttribute("inicioSesion", null);
+	%>
+	<%
+		}
+	%>
 
+<div class="main">
 	<div class="contenedor-vendidos">
 		<h2>Más vendidos</h2>
 		<div class="owl-carousel owl-theme a">
@@ -123,6 +135,7 @@
 			</div>
 		</div>
 	</div>
+	</div>
 
 	<!-- FOOTER -->
 	<footer class="w-100 py-4 flex-shrink-0">
@@ -152,7 +165,7 @@
 						<li><a href="#">Wizards of the Coast</a></li>
 						<li><a href="#">Acerca de </a></li>
 						<li><a href="#">D&D</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="Contactar">Ayuda y soporte, contáctanos</a></li>
 					</ul>
 				</div>
 			</div>

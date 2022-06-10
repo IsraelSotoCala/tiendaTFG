@@ -65,36 +65,39 @@
     }
 }
 
-.contenedor-carrito {
-    display: flex;
-    flex-direction: column;
-    h2 {
-        margin-top: 20px;
-        text-align: center;
-        margin-bottom: 60px;
-        text-decoration: underline;
-    }
-    .precio-confirmar {
+.main {
+    min-height: 100vh;
+    .contenedor-carrito {
         display: flex;
-        margin-left: 20px;
         flex-direction: column;
-        margin-top: 30px;
-        .precio-compra {
-            display: flex;
+        h2 {
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 60px;
+            text-decoration: underline;
         }
-        .confirmar-compra {
+        .precio-confirmar {
             display: flex;
-            margin-bottom: 20px;
-            .btn {
-                margin-right: 20px;
-                width: 200px;
-                a {
-                    color: map-get($colors, blanco);
-                    text-decoration: none;
-                }
+            margin-left: 20px;
+            flex-direction: column;
+            margin-top: 30px;
+            .precio-compra {
+                display: flex;
             }
-            input {
-                width: 200px;
+            .confirmar-compra {
+                display: flex;
+                margin-bottom: 20px;
+                .btn {
+                    margin-right: 20px;
+                    width: 200px;
+                    a {
+                        color: map-get($colors, blanco);
+                        text-decoration: none;
+                    }
+                }
+                input {
+                    width: 200px;
+                }
             }
         }
     }

@@ -32,6 +32,9 @@
 			<input type="password" name="contrasenia"> 
 				
 			<input type="submit" value="Iniciar Sesion" class="btn btn-dark">
+			
+			<a href="PaginaPrincipal">Ir a la página principal</a>
+			<a href="LoginClientes">Login clientes</a>
 
 
 			<%

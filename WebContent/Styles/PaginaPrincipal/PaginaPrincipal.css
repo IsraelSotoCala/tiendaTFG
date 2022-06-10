@@ -145,7 +145,11 @@ body {
   display: flex;
 }
 
-.contenedor-vendidos {
+.main {
+  min-height: 100vh;
+}
+
+.main .contenedor-vendidos {
   background-color: #e8e4dc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,12 +164,12 @@ body {
   padding-top: 20px;
 }
 
-.contenedor-vendidos h2 {
+.main .contenedor-vendidos h2 {
   text-decoration: underline;
   font-family: OpenSans-Bold;
 }
 
-.contenedor-vendidos .owl-carousel {
+.main .contenedor-vendidos .owl-carousel {
   margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -174,22 +178,22 @@ body {
   display: flex;
 }
 
-.contenedor-vendidos .owl-carousel .item img {
+.main .contenedor-vendidos .owl-carousel .item img {
   width: 250px;
 }
 
-.contenedor-vendidos .owl-carousel .btn a {
+.main .contenedor-vendidos .owl-carousel .btn a {
   color: white;
   text-decoration: none;
 }
 
-.contenedor-vendidos .owl-carousel .boton-carrusel {
+.main .contenedor-vendidos .owl-carousel .boton-carrusel {
   margin-top: 10px;
   margin-left: 60px;
   margin-bottom: 40px;
 }
 
-.contenedor-vendidos .contenedor-info {
+.main .contenedor-vendidos .contenedor-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +204,7 @@ body {
   height: 500px;
 }
 
-.contenedor-vendidos .contenedor-info .info-izquierda {
+.main .contenedor-vendidos .contenedor-info .info-izquierda {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,16 +223,16 @@ body {
           justify-content: center;
 }
 
-.contenedor-vendidos .contenedor-info .info-izquierda h2 {
+.main .contenedor-vendidos .contenedor-info .info-izquierda h2 {
   text-decoration: none;
   margin-bottom: 20px;
 }
 
-.contenedor-vendidos .contenedor-info .info-izquierda h4 {
+.main .contenedor-vendidos .contenedor-info .info-izquierda h4 {
   margin-bottom: 20px;
 }
 
-.contenedor-vendidos .contenedor-info .info-derecha {
+.main .contenedor-vendidos .contenedor-info .info-derecha {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,17 +250,17 @@ body {
           flex-direction: column;
 }
 
-.contenedor-vendidos .contenedor-info .info-derecha h2 {
+.main .contenedor-vendidos .contenedor-info .info-derecha h2 {
   text-decoration: none;
   margin-bottom: 20px;
 }
 
-.contenedor-vendidos .contenedor-info .info-derecha button {
+.main .contenedor-vendidos .contenedor-info .info-derecha button {
   width: 200px;
   background-color: #a00c0c;
 }
 
-.contenedor-vendidos .contenedor-info .info-derecha button a {
+.main .contenedor-vendidos .contenedor-info .info-derecha button a {
   color: white;
   text-decoration: none;
 }

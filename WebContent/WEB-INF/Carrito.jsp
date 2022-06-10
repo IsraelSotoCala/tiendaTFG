@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport"/>
 <title>Carrito</title>
 
 <!-- CSS only -->
@@ -58,6 +58,7 @@
 		</nav>
 	</header>
 
+<div class="main">
 	<div class="contenedor-carrito">
 		<h2>Tu carrito</h2>
 		<form action="ConfirmarCompra">
@@ -111,9 +112,9 @@
 						</span> <img src="assets/img/borrar.png" width="25px"
 							class="borrarProducto">
 					</div> <%
- 	}
- 	} else { 
- %> <h4>El carrito está vacío</h4><% } %>
+					 	}
+				 	} else { 
+				 %> <h4>El carrito está vacío</h4><% } %>
 				</li>
 			</ul>
 			<div class="precio-confirmar">
@@ -136,7 +137,7 @@
 			</div>
 		</form>
 	</div>
-
+</div>
 	<!-- FOOTER -->
 	<footer class="w-100 py-4 flex-shrink-0">
 		<div class="container py-4">
@@ -165,7 +166,7 @@
 						<li><a href="#">Wizards of the Coast</a></li>
 						<li><a href="#">Acerca de </a></li>
 						<li><a href="#">D&D</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="Contactar">Ayuda y soporte, contáctanos</a></li>
 					</ul>
 				</div>
 			</div>

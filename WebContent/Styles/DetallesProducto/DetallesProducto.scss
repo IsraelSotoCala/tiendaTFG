@@ -64,49 +64,51 @@
     }
 }
 
-.detalles-producto {
-    display: flex;
-    font-family: OpenSans;
-    flex-direction: column;
-    padding: 150px;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../../assets/img/FondoCatalogo.jpg);
-    .imagen-datos {
+.main {
+    .detalles-producto {
         display: flex;
+        font-family: OpenSans;
+        flex-direction: column;
+        padding: 150px;
         align-items: center;
         justify-content: center;
-        background-color: map-get($colors, pasteltranslucido);
-        gap: 10px;
-        .contenedor-imagen-producto {
-            margin: 20px;
-        }
-        .datos-producto {
+        background-image: url(../../assets/img/FondoCatalogo.jpg);
+        .imagen-datos {
             display: flex;
-            flex-direction: column;
-            margin: 20px;
-            width: 80%;
-            h2 {
-                font-family: OpenSans-Bold;
+            align-items: center;
+            justify-content: center;
+            background-color: map-get($colors, pasteltranslucido);
+            gap: 10px;
+            .contenedor-imagen-producto {
+                margin: 20px;
             }
-            .info-producto {
+            .datos-producto {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                margin: 20px;
+                width: 80%;
                 h2 {
                     font-family: OpenSans-Bold;
                 }
+                .info-producto {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    h2 {
+                        font-family: OpenSans-Bold;
+                    }
+                }
             }
-        }
-        .anadir-volver {
-            display: flex;
-            margin-top: 20px;
-            .btn {
-                width: 200px;
-                margin-right: 10px;
-                a {
-                    color: map-get($colors, blanco);
-                    text-decoration: none;
+            .anadir-volver {
+                display: flex;
+                margin-top: 20px;
+                .btn {
+                    width: 200px;
+                    margin-right: 10px;
+                    a {
+                        color: map-get($colors, blanco);
+                        text-decoration: none;
+                    }
                 }
             }
         }

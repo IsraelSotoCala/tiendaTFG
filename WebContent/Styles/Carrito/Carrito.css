@@ -137,7 +137,11 @@
   display: flex;
 }
 
-.contenedor-carrito {
+.main {
+  min-height: 100vh;
+}
+
+.main .contenedor-carrito {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,14 +151,14 @@
           flex-direction: column;
 }
 
-.contenedor-carrito h2 {
+.main .contenedor-carrito h2 {
   margin-top: 20px;
   text-align: center;
   margin-bottom: 60px;
   text-decoration: underline;
 }
 
-.contenedor-carrito .precio-confirmar {
+.main .contenedor-carrito .precio-confirmar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,30 +170,30 @@
   margin-top: 30px;
 }
 
-.contenedor-carrito .precio-confirmar .precio-compra {
+.main .contenedor-carrito .precio-confirmar .precio-compra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contenedor-carrito .precio-confirmar .confirmar-compra {
+.main .contenedor-carrito .precio-confirmar .confirmar-compra {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
 
-.contenedor-carrito .precio-confirmar .confirmar-compra .btn {
+.main .contenedor-carrito .precio-confirmar .confirmar-compra .btn {
   margin-right: 20px;
   width: 200px;
 }
 
-.contenedor-carrito .precio-confirmar .confirmar-compra .btn a {
+.main .contenedor-carrito .precio-confirmar .confirmar-compra .btn a {
   color: white;
   text-decoration: none;
 }
 
-.contenedor-carrito .precio-confirmar .confirmar-compra input {
+.main .contenedor-carrito .precio-confirmar .confirmar-compra input {
   width: 200px;
 }
 

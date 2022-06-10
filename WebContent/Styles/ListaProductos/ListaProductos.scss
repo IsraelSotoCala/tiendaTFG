@@ -64,108 +64,110 @@
     }
 }
 
-.contenedor-filtros {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: map-get($colors, pasteldungeon);
-    font-family: OpenSans;
-    .titulos {
-        display: flex;
-        justify-content: space-around;
-        h4 {
-            font-weight: bold;
-        }
-    }
-    form {
+.main {
+    min-height: 100vh;
+    .contenedor-filtros {
+        padding: 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
-        .opciones-filtrado {
+        width: 100%;
+        background-color: map-get($colors, pasteldungeon);
+        font-family: OpenSans;
+        .titulos {
             display: flex;
             justify-content: space-around;
-            select {
-                width: 250px;
-                option {
-                    width: 200px;
-                }
-            }
-            input {
-                width: 250px;
-            }
-        }
-        .container-fluid {
-            --bs-gutter-x: 0;
-            justify-content: center;
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            input {
-                width: 200px;
-            }
-        }
-    }
-    button {
-        width: 200px;
-        a {
-            color: map-get($colors, blanco);
-            text-decoration: none;
-        }
-    }
-}
-
-.list-group {
-    font-family: OpenSans;
-    .list-group-item {
-        border-radius: 0;
-        display: flex;
-        .container-fluid {
-            display: flex;
-            flex-direction: column;
-            width: auto;
-            margin: 0;
-            a {
-                color: map-get($colors, negro);
+            h4 {
                 font-weight: bold;
             }
         }
-    }
-}
-
-.paginas {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: map-get($colors, pasteldungeon);
-    font-family: OpenSans;
-    .botones-paginas {
-        display: flex;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .opciones-filtrado {
+                display: flex;
+                justify-content: space-around;
+                select {
+                    width: 250px;
+                    option {
+                        width: 200px;
+                    }
+                }
+                input {
+                    width: 250px;
+                }
+            }
+            .container-fluid {
+                --bs-gutter-x: 0;
+                justify-content: center;
+                display: flex;
+                gap: 10px;
+                margin-top: 20px;
+                input {
+                    width: 200px;
+                }
+            }
+        }
         button {
-            height: 50px;
-        }
-        input {
             width: 200px;
+            a {
+                color: map-get($colors, blanco);
+                text-decoration: none;
+            }
         }
-        a {
-            color: map-get($colors, blanco);
-            text-decoration: none;
+    }
+    .list-group {
+        font-family: OpenSans;
+        .list-group-item {
+            border-radius: 0;
+            display: flex;
+            .container-fluid {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                margin: 0;
+                a {
+                    color: map-get($colors, negro);
+                    font-weight: bold;
+                }
+            }
         }
-        div {
-            .pagination {
-                .page-item {
-                    a {
-                        color: map-get($colors, negro);
-                        margin: 10px;
+    }
+    .paginas {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: map-get($colors, pasteldungeon);
+        font-family: OpenSans;
+        .botones-paginas {
+            display: flex;
+            button {
+                height: 50px;
+            }
+            input {
+                width: 200px;
+            }
+            a {
+                color: map-get($colors, blanco);
+                text-decoration: none;
+            }
+            div {
+                .pagination {
+                    .page-item {
+                        a {
+                            color: map-get($colors, negro);
+                            margin: 10px;
+                        }
                     }
                 }
             }
         }
-    }
-    a {
-        color: map-get($colors, negro);
-        font-weight: bold;
+        a {
+            color: map-get($colors, negro);
+            font-weight: bold;
+        }
     }
 }
 

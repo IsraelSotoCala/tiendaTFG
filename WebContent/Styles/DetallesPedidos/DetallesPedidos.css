@@ -258,6 +258,7 @@ footer .logo {
 
 footer a {
   color: white;
+  text-decoration: none;
 }
 
 .error {

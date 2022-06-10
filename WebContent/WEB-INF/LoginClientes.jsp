@@ -46,6 +46,8 @@
 	
 	
 				<a href="CrearCuenta">¿No tienes una cuenta? Crea una aquí</a>
+				<a href="PaginaPrincipal">Ir a la página principal</a>
+				<a href="LoginEmpleados">Login empleados</a>
 	
 			</form>
 		</div>
